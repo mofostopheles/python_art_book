@@ -7,8 +7,11 @@
 	• License: GNU Lesser General Public License
 """
 
-from decimal import Decimal
-import math
+import inspect
+
+RED = '\033[91m'
+END = '\033[0m'
+PATH_TO_PLOTS = '../../__render/plots/'
 
 def isPrime(number):
 	if (number==1):
@@ -21,5 +24,24 @@ def isPrime(number):
 				return False
 		return True 
 
-def reduceNumber(number):
-	return 2
+def reduce(number):
+	input_number = str(number)
+	value = 0
+	for i in input_number:
+		value += int(i)
+
+	if (value > 9):
+		return reduce(value)
+	else:
+		return value
+
+def chart_setup(plot):
+	# list the plot styles
+	# print(plot.style.available)
+
+	# set the style
+	plot.style.use('seaborn-dark-palette')
+	plot.style.use('seaborn-whitegrid')
+		
+def function_name():
+	return inspect.stack()[1].function
