@@ -33,11 +33,15 @@ def pattern_012():
 
 	# Chart setup and display
 	_common.chart_setup(plt)
-	plt.xlabel('Occurances of ' + str(pattern_match) + " within N÷" + str(round(math.e, 2)) )
+	plt.xlabel('Occurances of ' + str(pattern_match) + " within N÷" + str(round(number_generator, 2)) )
 	plt.ylabel('Range of N')
 	plt.scatter(list_of_candidates, list_of_numbers, marker=display_char)
 	plt.title(_common.function_name(), fontsize=14)
-	plt.savefig(_common.PATH_TO_PLOTS + _common.function_name() + '-' + str(pattern_match) + '-' + str(round(math.e, 2)) + '.png')
+	plt.savefig( _common.PATH_TO_PLOTS + \
+				 _common.function_name() + \
+				 '-' + str(pattern_match) + \
+				 '-' + str(round(number_generator, 2)) + \
+				 '.png')
 	plt.show()
 	plt.clf()
 
