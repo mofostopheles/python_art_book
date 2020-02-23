@@ -8,11 +8,11 @@
 from decimal import Decimal
 import math
 
-def pattern_001():
+def pattern_002():
 # Simple pattern generation using division and string matching.
 
 	# Parameters
-	pattern_match = 77
+	pattern_match = 9
 	number_generator = math.e
 	range_start = 1
 	range_end = 10000
@@ -32,4 +32,4 @@ def pattern_001():
 	print(print_string)
 
 # Run the code
-pattern_001()
+pattern_002()
