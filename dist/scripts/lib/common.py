@@ -13,7 +13,7 @@ RED = '\033[91m'
 END = '\033[0m'
 PATH_TO_PLOTS = '../../__render/plots/'
 
-def isPrime(number):
+def is_prime(number):
 	if (number==1):
 		return False
 	elif (number==2):
