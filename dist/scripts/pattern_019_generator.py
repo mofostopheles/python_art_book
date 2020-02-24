@@ -10,12 +10,12 @@ import math
 import matplotlib.pyplot as plt
 import lib.common as _common
 
-def pattern_018_generator():
+def pattern_019_generator():
 # Simple pattern generation using division and string matching.
 
 	for j in range(1,301):
 		# Parameters
-		pattern_match = 50
+		pattern_match = 428571
 		number_generator = 1.0 + j/100
 		range_start = 1
 		range_end = 10000
@@ -48,4 +48,4 @@ def pattern_018_generator():
 		plt.clf()
 
 # Run the code
-pattern_018_generator()
+pattern_019_generator()

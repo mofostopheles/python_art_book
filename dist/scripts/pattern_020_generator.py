@@ -10,13 +10,14 @@ import math
 import matplotlib.pyplot as plt
 import lib.common as _common
 
-def pattern_018_generator():
+def pattern_020_generator():
 # Simple pattern generation using division and string matching.
 
-	for j in range(1,301):
+	for j in range(700,800):
+
 		# Parameters
-		pattern_match = 50
-		number_generator = 1.0 + j/100
+		pattern_match = 777
+		number_generator = 7.0 + j/1000
 		range_start = 1
 		range_end = 10000
 		display_char = '.'
@@ -41,11 +42,11 @@ def pattern_018_generator():
 		plt.savefig( _common.PATH_TO_PLOTS + \
 					 _common.function_name() + \
 					 '-' + str(pattern_match) + \
-					 '-' + str(round(number_generator, 2)) + \
+					 '-' + str(round(number_generator, 3)) + \
 					 '-' + str(j) + \
 					 '.png')
 		# plt.show() # commented out, otherwise you will need to manually dismiss each new plot
 		plt.clf()
 
 # Run the code
-pattern_018_generator()
+pattern_020_generator()
