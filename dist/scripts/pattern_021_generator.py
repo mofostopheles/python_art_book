@@ -16,7 +16,7 @@ def pattern_021_generator():
 	for j in range(0,1000):
 
 		# Parameters
-		pattern_match = 13579 # try this next 13591
+		pattern_match = 13579
 		number_generator = 1.0 + j/1000
 		range_start = 1
 		range_end = 10000
@@ -32,6 +32,7 @@ def pattern_021_generator():
 			if str(candidate).find( str(pattern_match) ) > -1:
 				list_of_candidates.append( candidate )
 				list_of_numbers.append( i )
+				print( str(i) + ' / ' + str(candidate) )
 
 		# Chart setup and display
 		if len(list_of_candidates) > 0: # don't plot if no values
